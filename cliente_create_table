@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS `mydb`.`cliente` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(90) NOT NULL,
+  `cpf` VARCHAR(11) NOT NULL,
+  `foto` VARCHAR(90) NOT NULL,
+  `email` VARCHAR(90) NOT NULL,
+  `rua` VARCHAR(45) NULL,
+  `bairro` VARCHAR(45) NULL,
+  `cidade` VARCHAR(45) NULL,
+  `pais` VARCHAR(20) NULL,
+  `codigopostal` INT NULL,
+  `nascimento` DATE NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC) VISIBLE)
+ENGINE = InnoDB
